@@ -12,14 +12,14 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 
 <?php if ( $order->status == 'pending' ) : ?>
 	<p><?php printf( __( 'Halo %s , Tidak terasa waktu cepat berlalu, Invoice %s akhirnya datang kembali. 
-Selama bersama kami, sudahkah %s mengikuti:
-1. Trading School yang diadakan setiap hari Selasa dan Kamis
-2. Webinar yang diadakan 1 bulan 1x
-3. Mengkonsultasikan portofolio %s
-4. Setiap rekomendasi Buy Sell Stop Loss Take Profit yang diberikan
-5. Money and Mind Management yang benar dalam trading
-Kami harap %s mendapatkan manfaat yang luar biasa dengan bergabung bersama kami.
-Jangan biarkan %s trading tanpa arahan dan panduan yang jelas.
+Selama bersama kami, sudahkah %s mengikuti:<br />
+1. Trading School yang diadakan setiap hari Selasa dan Kamis<br />
+2. Webinar yang diadakan 1 bulan 1x<br />
+3. Mengkonsultasikan portofolio %s<br />
+4. Setiap rekomendasi Buy Sell Stop Loss Take Profit yang diberikan<br />
+5. Money and Mind Management yang benar dalam trading<br />
+Kami harap %s mendapatkan manfaat yang luar biasa dengan bergabung bersama kami.<br />
+Jangan biarkan %s trading tanpa arahan dan panduan yang jelas.<br />
 Dapatkan lagi manfaatnya. Sepertinya kita sudah tidak sabar untuk dapat bertemu kembali, %s dapat segera melakukan payment renewal invoice, dengan klik link berikut: <a href="%s">Pay Now &raquo;</a>', WC_Subscriptions::$text_domain ), get_bloginfo( 'name' ), $order->get_checkout_payment_url() ); ?></p>
 <?php elseif ( 'failed' == $order->status ) : ?>
 	<p><?php printf( __( 'Pembayaran otomatis untuk renewal %s telah <em>failed</em>. Untuk aktivasi kembali, silahkan login dan lakukan pembayaran dari halaman user Anda: <a href="%s">Pay Now &raquo;</a>', WC_Subscriptions::$text_domain ), get_bloginfo( 'name' ), get_permalink( woocommerce_get_page_id( 'myaccount' ) ) ); ?></p>
