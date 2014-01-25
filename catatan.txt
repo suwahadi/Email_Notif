@@ -4,9 +4,9 @@
 */
 
 <?php if ( $order->status == 'pending' ) : ?>
-<p><?php printf( __( 'Status Pending') ); ?></p>
+<p><?php printf( __( 'Status pending bro...') ); ?></p>
 <?php elseif ( 'failed' == $order->status ) : ?>
-<p><?php printf( __( 'Status Failed') ); ?></p>
+<p><?php printf( __( 'Status failed bro...') ); ?></p>
 <?php endif; ?>
 
 ?>
