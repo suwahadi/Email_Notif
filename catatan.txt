@@ -1,1 +1,12 @@
-24 01 2014
+<?php
+/**
+* Berikut ini adalah fungsi untuk pengecekan status order
+*/
+
+<?php if ( $order->status == 'pending' ) : ?>
+<p><?php printf( __( 'Status Pending') ); ?></p>
+<?php elseif ( 'failed' == $order->status ) : ?>
+<p><?php printf( __( 'Status Failed') ); ?></p>
+<?php endif; ?>
+
+?>
